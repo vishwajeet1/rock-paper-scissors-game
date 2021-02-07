@@ -62,6 +62,7 @@ export default function HandCardCircle(props) {
             <img
               src={currentIcons(props.hands)}
               className="max-w-sm w-4 h-4 md:w-12 md:h-12"
+              alt={"hands"}
             />
           </div>
         </div>

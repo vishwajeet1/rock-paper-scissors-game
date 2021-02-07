@@ -4,7 +4,7 @@ export default Gamepad = (props) => {
     <div className="flex justify-center items-center py-12">
       <div className="flex justify-between items-center p-4 border rounded-lg min-w-3/4 md:min-w-1/2">
         <div className="">
-          <img src={logo} className="w-1/2 md:w-full"></img>
+          <img src={logo} alt="logo" className="w-1/2 md:w-full"></img>
         </div>
         <div className="flex items-stretch ">
           <div className="md:text-base bg-white rounded-lg flex flex-col justify-around items-center h-full py-4 px-8 md:px-12">

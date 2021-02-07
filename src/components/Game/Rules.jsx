@@ -32,10 +32,11 @@ export default function Rules() {
                   <div className="flex justify-center text-2xl text-gray-500 font-bold">
                     RULES
                   </div>
-                  <img src={ruleImage} />
+                  <img src={ruleImage} alt={"rule"} />
                   <img
                     src={closeIcon}
                     className="cursor-pointer"
+                    alt={"closeIcon"}
                     onClick={() => setModalIsOpen(false)}
                   />
                 </div>
@@ -51,9 +52,10 @@ export default function Rules() {
                       src={closeIcon}
                       className="cursor-pointer"
                       onClick={() => setModalIsOpen(false)}
+                      alt={"closeIcon"}
                     />
                   </div>
-                  <img src={ruleImage} />
+                  <img src={ruleImage} alt={"rules"} />
                 </div>
               </div>
             )}

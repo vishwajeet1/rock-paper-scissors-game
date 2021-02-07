@@ -20,7 +20,7 @@ function AllHands({ handleSelectHand }) {
               ></HandCardCircle>
             </div>
           </div>
-          <img src={triangle} className="w-1/2 md:w-3/4"></img>
+          <img src={triangle} alt={"triangle"} className="w-1/2 md:w-3/4"></img>
           <div className="relative">
             <div
               className="absolute"
