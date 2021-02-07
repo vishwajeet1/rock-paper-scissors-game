@@ -6,7 +6,7 @@ import "./style.css";
 import { rule } from "postcss";
 
 export default function Rules() {
-  const [modalIsOpen, setModalIsOpen] = useState(true);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
   const { height, width } = useWindowDimensions();
   return (
     <div>

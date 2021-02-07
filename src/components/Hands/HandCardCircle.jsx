@@ -26,11 +26,20 @@ export default function HandCardCircle(props) {
   const colorBand = (currentHand) => {
     switch (currentHand) {
       case HAND_DATA.rock:
-        return "red";
+        return {
+          border: "border-red-800",
+          bg: "bg-red-500",
+        };
       case HAND_DATA.paper:
-        return "yellow";
+        return {
+          border: "border-yellow-800",
+          bg: "bg-yellow-500",
+        };
       default:
-        return "purple";
+        return {
+          border: "border-purple-800",
+          bg: "bg-purple-500",
+        };
     }
   };
 
@@ -46,17 +55,17 @@ export default function HandCardCircle(props) {
           <span class="top-0 left-0 absolute animate-ping-1 inline-flex h-full w-full rounded-full bg-white opacity-75 z-10"></span>
         )}
         <div
-          className={`z-40 rounded-full border-b-4 border-${colorBand(
-            props.hands
-          )}-800 bg-${colorBand(props.hands)}-500 p-${
-            props.gamePlay ? "4" : "2"
-          } md:p-${props.gamePlay ? "8" : "4"}`}
+          className={`z-40 rounded-full border-b-4 ${
+            colorBand(props.hands).border
+          } ${colorBand(props.hands).bg} ${props.gamePlay ? "p-4" : "p-2"} ${
+            props.gamePlay ? "md:p-8" : "md:p-4"
+          }`}
         >
           <div
-            className={`rounded-full bg-white p-${
-              props.gamePlay ? "8" : "4"
-            } md:p-${
-              props.gamePlay ? "12" : "8"
+            className={`rounded-full bg-white ${
+              props.gamePlay ? "p-8" : "p-4"
+            } ${
+              props.gamePlay ? "md:p-12" : "md:p-8"
             } border-t-4 border-lightgray-400`}
           >
             <img
