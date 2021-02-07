@@ -21,7 +21,7 @@ export default function Rules() {
         </div>
       ) : (
         <div
-          className={`fixed w-full h-full bg-white top-0 z-80 ${
+          className={`fixed w-full h-full bg-white top-0 z-50 ${
             width > 600 && "desktopModal"
           }`}
         >
