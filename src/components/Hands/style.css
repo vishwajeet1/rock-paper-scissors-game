@@ -1,0 +1,18 @@
+.animate-ping-1 {
+  animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+  animation-delay: 3s;
+}
+
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .animate-ping-1 {
+    animation-delay: 0s;
+  }
+}
